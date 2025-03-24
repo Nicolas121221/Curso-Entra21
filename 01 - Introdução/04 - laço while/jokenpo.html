@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jokenpo</title>
+    <script>
+        let scorePC = 0
+        let scoreUser = 0
+        let round = 0
+
+        while (true) {
+            let usuario = prompt('Escolha uma opção:\n[1] - Pedra\n[2] - Papel \n[3] - Tesoura')
+            let pc = Math.ceil(Math.random() * 3).toString()
+            round+=1
+
+            alert(`Round ${round}\nVocê jogou ${usuario}\nPC jogou ${pc}`)
+            if (usuario === pc) {
+                
+                alert(`Empate\nplacar: Usuario: ${scoreUser} pontos  PC: ${scorePC} pontos`)
+            }
+            else if (usuario === '1' && pc === '3' || usuario === '2' && pc === '1' || usuario === '3' && pc === '2') {
+                scoreUser += 1
+                alert(`Você ganhou a rodada\nplacar: Usuario: ${scoreUser} pontos  PC: ${scorePC} pontos`)
+
+            }
+            else {
+                scorePC += 1
+                alert(`Você perdeu a rodada\nplacar: Usuario: ${scoreUser} pontos  PC: ${scorePC} pontos`)
+
+            }
+
+            if (scoreUser === 3) {
+                alert('Você venceu o jogo')
+                break
+            }
+            else if (scorePC === 3) {
+                alert('Você perdeu o jogo')
+                break
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

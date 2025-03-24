@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+    border: 0px white;
+    border-radius: 50%;
+}

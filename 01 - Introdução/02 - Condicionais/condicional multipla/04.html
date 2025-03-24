@@ -1,0 +1,22 @@
+<script>
+// Elabore um algoritmo que receba os 3 lados de um triângulo, e classifique-o em: 	Equilátero: todos os lados iguais, Isóceles - 2 lados iguais, Escaleno - 3 lados diferentes, ou NÃO TRIANGULO - quando um lado é maior que a soma dos outros 2 lados.
+
+let lado1 = parseFloat(prompt('Digite o primeiro lado do triangulo'))
+let lado2 = parseFloat(prompt('Digite o segundo lado do triangulo'))
+let lado3 = parseFloat(prompt('Digite o terceiro lado  do triangulo'))
+
+if(lado1>lado2+lado3 || lado2>lado1+lado3 || lado3>lado1+lado2){
+    alert('Não é um triângulo')
+}
+else if(lado1 == lado2 && lado2 == lado3){
+    alert('Equilátero')
+}
+else if(lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
+    alert('Isóceles')
+}
+else{
+    alert('Escaleno')
+}
+
+// criar um algoritmo que calcula se um ano bisexto ou não
+</script>

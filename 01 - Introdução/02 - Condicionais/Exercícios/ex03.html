@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+    <script>
+        let altura = parseFloat(prompt("Altura m: "))
+        let sexo = (prompt("Sexo(Masculino/Feminino):")).toLowerCase()
+
+        if(sexo == "masculino"){
+            alert(`Peso ideal: ${altura*50}kg`)
+        }
+        else if(sexo == "feminino"){
+            alert(`Peso ideal: ${altura*40}kg`)
+        }
+        else{
+            alert(`Você digitou errado o Sexo, tente digitar "Masculino" ou "Feminino"`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

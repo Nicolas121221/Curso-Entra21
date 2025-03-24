@@ -1,0 +1,17 @@
+<script>
+    // crie um programa que receber:valor mínimo , valor máximo, valor atual o programa deve informar se o valor atual está dentro dos limites ou não
+
+    let valorMaximo = parseFloat(prompt("Valor Máximo"))
+    let valorMinimo = parseFloat(prompt("Valor Mínimo"))
+    let valorAtual  = parseFloat(prompt("Valor Atual"))
+
+    if(valorAtual >= valorMinimo && valorAtual <= valorMaximo){
+        alert(`O seu valor está no limite`)
+    }
+    else if(typeof(valorAtual)=="number" && typeof(valorMinimo)=="number" && typeof(valorMaximo)=="number"){
+        alert(`O valor atual não está dentro do limite`)
+    }  
+    else {
+        alert(`Você não digitou corretamente`)
+    }
+</script>

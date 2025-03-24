@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 09</title>
+    <script>
+        let km = parseFloat(prompt('Digite quantos quilometros você dirigiu com o carro'))
+        let dia = parseInt(prompt('Digite o número de dias que você utilizou o carro'))
+        let valorkm = km*0.2
+        let valordia = dia*90
+        let valorfinal = valordia+valorkm
+        
+        alert('O valor aluguel do carro é de '+Intl.NumberFormat('pt-br', {style:"currency", currency:"BRL"}).format(valorfinal))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

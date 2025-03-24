@@ -1,0 +1,35 @@
+    estruturas de controle:
+
+condicionais
+if;else;else if; switch
+
+>  - maior
+<  - menor
+>= - Maior ou igual
+<= - Menor ou igual
+== - igual(somente o contéudp)
+=== - estritamente igual(tanto o conteúdo quanto o o tipo)
+!= - diferente
+
+estruturas
+
+if ('Operador Lógico'){
+    'Se Verdadeiro'
+}
+else'{
+    'Se Falso'
+}
+operador ternário
+${idade > 17 ? 'maior': 'menor'}
+
+    Métodos Sting
+formatação 
+(`string`).função()
+
+.toLowerCase()  - torna minusculo
+.toUpperCase()  - torna maísculo
+.lenght()       - retorna o número de caractéres
+.indexOF()      - retorna a posição de outra string dentro do texto
+.includes()     - retorna um valor booleano se alguma palavra está contida no texto
+.slice()        - retorna o texto cortado 
+.replace()      - substitui um texto

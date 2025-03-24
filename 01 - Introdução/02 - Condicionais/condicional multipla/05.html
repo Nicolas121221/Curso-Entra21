@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Bissexto</title>
+    <script>
+
+        let ano = parseInt(prompt('Digite o ano: '))
+        if(ano%400==0){
+            alert(`${ano} é bissexto`)
+        }
+        else if(ano%100 ==0){
+            alert(`${ano} não é bissexto`)
+        }
+        else if(ano%4 == 0){
+            alert(`${ano} é bissexto`)
+        }
+        else{
+            alert(`${ano} não é bissexto`)
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

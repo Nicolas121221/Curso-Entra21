@@ -1,0 +1,20 @@
+<script>
+    // criar um algoritmo que recebe login e senha
+    // e compara com o login e senha já cadastrados
+    // deve retornar ao final, acesso liberado ou negado
+
+let login = prompt('digite o seu login')
+let senha = prompt('digite a sua senha')
+const loginCadastrado ='nicolas'
+const senhaCadastrada ='senha'
+
+ if(login == loginCadastrado && senha == senhaCadastrada){
+    alert('Acesso liberado')
+ }
+ else if(login != loginCadastrado){
+    alert(`login incorreto ou senha, acesso negado`)
+ }
+ else if (senha != senhaCadastrada){
+    alert(`senha incorreta, acesso negado`)
+ }
+</script>

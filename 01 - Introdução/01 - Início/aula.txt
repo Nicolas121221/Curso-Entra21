@@ -1,0 +1,15 @@
+Dev web
+
+Tríade 
+html css JavaScript
+
+framework - frontend
+react 
+react native
+vue
+
+backend - Node
+framework - backend
+xpress
+nodeJS
+
