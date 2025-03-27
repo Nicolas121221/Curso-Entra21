@@ -1,0 +1,482 @@
+{
+	"info": {
+		"_postman_id": "5f83cf71-f52e-4af4-b366-f6aabd13a324",
+		"name": "Blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43215859"
+	},
+	"item": [
+		{
+			"name": "select",
+			"item": [
+				{
+					"name": "regioes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3301/regioes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"regioes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3301/categorias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "insert",
+			"item": [
+				{
+					"name": "categorias",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoria\": \"Turismo Religioso\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/cadastrar/categorias",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"cadastrar",
+								"categorias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "regioes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"regiao\": \"Praias Verde Mar\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/cadastrar/regioes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"cadastrar",
+								"regioes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"usuario\":\"Nicolas121221\",\r\n    \"senha\":\"123456\",\r\n    \"nome\":\"Nícolas Guedes\",\r\n    \"data_nascimento\": \"2006/10/25\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/cadastrar/usuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"cadastrar",
+								"usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "autor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario_id\": 1,\r\n    \"biografia\": \"Criador do blog, desenvolvedor e CEO\",\r\n    \"imagem\": \"imagem muito bonita\",\r\n    \"links\": \"instagram, youtube e muito mais\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/cadastrar/autor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"cadastrar",
+								"autor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postagem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"As belas vistas de Santa Catarina\",\r\n    \"conteudo\": \"Aqui você verá as mais diversas paisagens do estado de Santa Catarina\",\r\n    \"autor_id\": 1,\r\n    \"imagem_capa\": \"link_da_imagem.jpg\",\r\n    \"categoria_id\": 2,\r\n    \"regiao_id\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/criar/postagem",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"criar",
+								"postagem"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comentario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comentario\": \"Seria melhor ter visto o pelé\",\r\n    \"usuario_id\": 1,\r\n    \"postagem_id\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/criar/comentario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"criar",
+								"comentario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "update",
+			"item": [
+				{
+					"name": "regiao",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"regiao\": \"Alto Vale\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/atualizar/regioes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"atualizar",
+								"regioes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "categoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"categoria\": \"Turismo Pecuário\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/atualizar/categoria/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"atualizar",
+								"categoria",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "usuarios",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n    \"usuario\":\"Nicolas121221\",\r\n    \"senha\":\"12345\",\r\n    \"nome\":\"Nícolas Guedes\",\r\n    \"data_nascimento\": \"2006/10/25\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/atualizar/usuarios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"atualizar",
+								"usuarios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "autores",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario_id\": 1,\r\n    \"biografia\": \"Criador do blog, desenvolvedor\",\r\n    \"imagem\": \"imagem muito bonita\",\r\n    \"links\": \"instagram, youtube, website\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/atualizar/autores/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"atualizar",
+								"autores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postagem",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\": \"As belas vistas de Santa Catarina\",\r\n    \"conteudo\": \"Aqui você verá as mais diversas paisagens do estado de Santa Catarina\",\r\n    \"autor_id\": 1,\r\n    \"imagem_capa\": \"link_da_imagem.jpg\",\r\n    \"categoria_id\": 2,\r\n    \"regiao_id\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/atualizar/postagem/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"atualizar",
+								"postagem",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comentario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comentario\": \"Seria melhor ter visto o pelé\",\r\n    \"usuario_id\": 1,\r\n    \"postagem_id\":2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/atualizar/comentario/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"atualizar",
+								"comentario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "status",
+			"item": [
+				{
+					"name": "postagem",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ativo\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/atualizar/postagem/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"atualizar",
+								"postagem",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "comentario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ativo\" : false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3301/status/comentario/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3301",
+							"path": [
+								"status",
+								"comentario",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
