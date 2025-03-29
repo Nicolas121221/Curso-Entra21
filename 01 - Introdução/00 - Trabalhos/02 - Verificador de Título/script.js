@@ -25,7 +25,7 @@ if(verificador2>9){
 }
 
 // Verifica o Título
-if(parseInt(verificador1) == titulo[10] && parseInt(verificador2) == titulo[11]){
+if(parseInt(verificador1) === titulo[10] && parseInt(verificador2) === titulo[11]){
     alert('válido')
 }
 else{
