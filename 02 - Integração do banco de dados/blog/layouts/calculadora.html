@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function zerarVisor(){
+        let visor = document.querySelector('#visor')
+        visor.innerText = ''
+    }
+    function adicionarNoVisor(valor){
+        let visor = document.querySelector('#visor')
+        visor.innerText += valor
+    }
+
+    </script>
+</head>
+<body>
+    <div id="corpo">
+        <div id="visor"></div>
+        <div class="botoes">
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">7</div>
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">8</div>
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">9</div>
+            <div class="botao verde" onclick="adicionarNoVisor(this.innerText)">+</div>
+        </div>
+        <div class="botoes">
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">4</div>
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">5</div>
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">6</div>
+            <div class="botao verde" onclick="adicionarNoVisor(this.innerText)">-</div>
+        </div>
+        <div class="botoes">
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">1</div>
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">2</div>
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">3</div>
+            <div class="botao verde" onclick="adicionarNoVisor(this.innerText)">*</div>
+        </div>
+        <div class="botoes">
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">0</div>
+            <div class="botao" onclick="adicionarNoVisor(this.innerText)">.</div>
+            <div class="botao verde" onclick="adicionarNoVisor(this.innerText)">=</div>
+            <div class="botao verde">/</div>
+        </div>
+    </div>
+</body>
+</html>
+

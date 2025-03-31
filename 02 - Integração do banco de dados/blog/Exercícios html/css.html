@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100dvh;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+
+        #h1-azul:hover {
+            transition: 300ms ease-in-out;
+            color: darkblue;
+        }
+
+        #h1-vermelho:hover {
+            transition: 300ms ease-in-out;
+            color: crimson;
+        }
+
+        #h1-verde:hover {
+            transition: 300ms ease-in-out;
+            color: darkgreen;
+        }
+
+        #h1-amarelo:hover {
+            transition: 300ms ease-in-out;
+            color: yellow;
+        }
+
+        .borda-fina:hover{
+            animation: 300ms ease-in-out;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1-azul" class="borda-fina">azul</h1>
+    <h1 id="h1-vermelho">vermelho</h1>
+    <h1 id="h1-verde" class="borda-fina">verde</h1>
+    <h1 id="h1-amarelo">amarelo</h1>
+</body>
+
+</html>

@@ -295,7 +295,6 @@ app.put("/status/comentario/:id", (req, res) => {
     })
 });
 
-
 app.listen(port, () => {
     console.log('Servidor Rodando.');
     console.log(`http://localhost:${port}`)

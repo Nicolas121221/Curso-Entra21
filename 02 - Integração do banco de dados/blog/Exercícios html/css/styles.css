@@ -1,0 +1,14 @@
+img{
+    /* border-radius: 50%; */
+    /* border-top: 5px groove blueviolet;
+    border-bottom: 10px ridge black;
+    border-left: 20px inset red; */
+    /* border-right: 6px outset green; */
+    opacity: 30%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+img:hover{
+    opacity: 100%;
+    border: 5px dotted black;
+}
