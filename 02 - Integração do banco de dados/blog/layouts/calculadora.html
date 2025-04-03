@@ -1,25 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
     <script>
-    function zerarVisor(){
-        let visor = document.querySelector('#visor')
-        visor.innerText = ''
-    }
-    function adicionarNoVisor(valor){
-        let visor = document.querySelector('#visor')
-        visor.innerText += valor
-    }
+        function ehSinal(str) {
+            switch (str) {
+                case '+':
+                case '-':
+                case '*':
+                case '/':
+                case '%':
+                    return true;
+                default:
+                    return false;
+            }
+        }
+        function zerarVisor() {
+            let visor = document.querySelector('#visor');
+            visor.innerText = '';
+        }
+        function adicionarNoVisor(valor) {
+            let visor = document.querySelector('#visor');
+            if (visor.innerText === 'Error') {
+                zerarVisor()
+            }
+            if(ehSinal(valor) && ehSinal(visor.innerText.slice(-1))){ apagarUltimo()}
+            visor.innerText += valor;
+        }
+        function apagarUltimo() {
+            let visor = document.querySelector('#visor');
+            if (visor.innerText === 'Error') {
+                zerarVisor()
+            }
+            textoVisor = visor.innerText;
+            visor.innerText = textoVisor.slice(0, textoVisor.length - 1);
+        };
+        function calcularResultado() {
+            let visor = document.querySelector('#visor');
+            try {
+                if (visor.innerText === 'Error') {
+                    return zerarVisor()
+                }
+                visor.innerText = eval(visor.innerText)
+            } catch {
+                visor.innerText = 'Error'
+            }
+            if (visor.innerText === 'undefined' || visor.innerText === '=') {
+                return zerarVisor()
+            }
+        }
 
     </script>
 </head>
+
 <body>
     <div id="corpo">
         <div id="visor"></div>
+        <div class="botoes">
+            <div class="botao verde" onclick="apagarUltimo()">C</div>
+            <div class="botao verde" onclick="zerarVisor()">CE</div>
+            <div class="botao verde" onclick="adicionarNoVisor(this.innerText)">(</div>
+            <div class="botao verde" onclick="adicionarNoVisor(this.innerText)">)</div>
+        </div>
         <div class="botoes">
             <div class="botao" onclick="adicionarNoVisor(this.innerText)">7</div>
             <div class="botao" onclick="adicionarNoVisor(this.innerText)">8</div>
@@ -41,10 +87,10 @@
         <div class="botoes">
             <div class="botao" onclick="adicionarNoVisor(this.innerText)">0</div>
             <div class="botao" onclick="adicionarNoVisor(this.innerText)">.</div>
-            <div class="botao verde" onclick="adicionarNoVisor(this.innerText)">=</div>
-            <div class="botao verde">/</div>
+            <div class="botao verde" onclick="calcularResultado()">=</div>
+            <div class="botao verde" onclick="adicionarNoVisor(this.innerText)">/</div>
         </div>
     </div>
 </body>
-</html>
 
+</html>
