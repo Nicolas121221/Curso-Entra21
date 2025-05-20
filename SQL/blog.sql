@@ -85,7 +85,6 @@ INSERT INTO regioes(regiao,slug) VALUES
 
 select * from categorias;
 select * from regioes;
-
 select * from autores;
 
 

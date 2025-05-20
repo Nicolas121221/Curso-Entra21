@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name":"Troca BgColor",
+    "version":"1.0",
+    "description":"Altera a cor de fundo da página de acordo com a cor selecionada",
+    "permissions":[
+        "scripting",
+        "activeTab"
+    ],
+    "action":{
+        "default_popup":"popup.html"
+    }
+}
