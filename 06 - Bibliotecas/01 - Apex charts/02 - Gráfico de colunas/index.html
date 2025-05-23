@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gráfico de Colunas</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #chart {
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart"></div>
+  </body>
+  <script>
+    let options = {
+      series: [
+        {
+          name: "Alunos",
+          data: [30, 50, 20],
+        },
+      ],
+      chart: {
+        type: "bar",
+      },
+      plotOptions: {
+        bar: {
+          dataLabels: {
+            position: "top", 
+          },
+        },
+      },
+      grid: {
+        show: false,
+      },
+      dataLabels: {
+        offsetY: -20,
+        style: {
+          fontSize: "12px",
+          colors: ["#000"],
+        },
+      },
+      xaxis: {
+        categories: ["Manhã", "Tarde", "Noite"],
+        position: "bottom",
+      },
+      yaxis: {
+        show:false,
+        max:70
+      },
+      fill: {
+        colors: ["#00ff00"],
+      },
+      title: {
+        text: "Estudantes por período",
+        align: "center",
+        style: {
+          color: "#000",
+        },
+      },
+    };
+
+    let chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+  </script>
+</html>
