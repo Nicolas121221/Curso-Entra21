@@ -1,18 +1,21 @@
 <script>
-	import { onMount } from "svelte";
+	import { onMount } from 'svelte';
+	import Post from '$lib/components/Post.svelte';
 
 	let loading = $state(true);
-    let data = []
-    onMount(()=>{
-        
-
-
-
-    })
+	let datas = $state([]);
+	onMount(async () => {
+		const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+		const json = await response.json();
+		datas = json;
+		setTimeout(() => {
+			loading = false;
+		}, 300);
+	});
 </script>
 
 <main
-	class="fixed bottom-0 left-0 right-0 top-0 -z-10 flex items-center justify-center bg-zinc-800 pt-12"
+	class="min-h-screen -z-10 flex items-center justify-center bg-zinc-800 pt-24"
 >
 	{#if loading}
 		<section class="flex flex-col items-center justify-center gap-4">
@@ -22,8 +25,12 @@
 			<h3 class="text-2xl font-thin text-white">Carregando ...</h3>
 		</section>
 	{:else}
-    <div>
+    <section class="w-5xl flex flex-col scroll-smooth min-h-screen">
+		{#each datas as data}
 
-    </div>
-    {/if}
+                <Post id={data.id} title={data.title} body={data.body} />
+            
+		{/each}
+    </section>
+	{/if}
 </main>
