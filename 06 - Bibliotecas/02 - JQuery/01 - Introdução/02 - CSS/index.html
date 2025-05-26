@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      .estilo-verde {
+        color: green;
+        font-size: xx-large;
+      }
+      .estilo-vermelho {
+        color: red;
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="nome" />
+    <button id="botao">Mensagem</button>
+    <p id="mensagem"></p>
+  </body>
+  <script>
+    $(document).ready(() => {
+      $("#botao").click(() => {
+        let nome = $("#nome").val().trim();
+
+        if (nome) {
+          $("#mensagem")
+            .removeClass("estilo-vermelho")
+            .addClass("estilo-verde");
+          $("#mensagem")
+            .text("Seja bem vindo(a), " + nome + " !")
+            .hide()
+            .fadeIn();
+        } else {
+          $("#mensagem")
+            .removeClass("estilo-verde")
+            .addClass("estilo-vermelho");
+          $("#mensagem").text("Por favor, Digite um nome").hide().fadeIn();
+        }
+      });
+    });
+  </script>
+</html>
