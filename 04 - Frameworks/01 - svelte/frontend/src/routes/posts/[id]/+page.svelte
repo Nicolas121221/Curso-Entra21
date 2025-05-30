@@ -10,6 +10,12 @@
 
     let id = page.params.id;
 
+	let counter = 0
+	let increment = ()=>{
+		counter+=1
+		return counter
+	}
+
 	onMount(async () => {
 		let response = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
 		datas = await response.json();
@@ -36,7 +42,7 @@
 				<Post id={datas.id} title={datas.title} body={datas.body} />
                 {#each comments as comment}
                 <Comment 
-                id={comment.id}
+                id={increment()}
                 name= {comment.name}
                 email = {comment.email}
                 body = {comment.body}
