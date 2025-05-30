@@ -1,0 +1,62 @@
+CREATE DATABASE ceps;
+USE ceps;
+ 
+CREATE TABLE ceps(
+id INT PRIMARY KEY AUTO_INCREMENT,
+cep varchar (8) NOT NULL UNIQUE,
+logradouro VARCHAR(255),
+bairro VARCHAR(255),
+cidade VARCHAR(255) NOT NULL,
+estado VARCHAR(2) NOT NULL
+);
+ 
+INSERT INTO ceps (cep, logradouro, bairro, cidade, estado) VALUES 
+('01001000', 'Praça da Sé', 'Sé', 'São Paulo', 'SP'),
+('02011000', 'Rua da Consolação', 'Consolação', 'São Paulo', 'SP'),
+('03031000', 'Avenida Celso Garcia', 'Brás', 'São Paulo', 'SP'),
+('04022000', 'Rua dos Três Irmãos', 'Vila Progredior', 'São Paulo', 'SP'),
+('05000000', 'Rua do Gasômetro', 'Gasômetro', 'São Paulo', 'SP'),
+('06060000', 'Rua do Acre', 'Vila Mariana', 'São Paulo', 'SP'),
+('07010100', 'Rua do Grito', 'Itaquera', 'São Paulo', 'SP'),
+('08040400', 'Avenida Aricanduva', 'Aricanduva', 'São Paulo', 'SP'),
+('09010000', 'Rua da Paz', 'São João Climaco', 'São Paulo', 'SP'),
+('10020000', 'Rua dos Três Irmãos', 'Vila Progredior', 'São Paulo', 'SP'),
+('11030000', 'Avenida São João', 'Centro', 'São Paulo', 'SP'),
+('12040000', 'Rua da Glória', 'Liberdade', 'São Paulo', 'SP'),
+('13050100', 'Avenida Brigadeiro Faria Lima', 'Pinheiros', 'São Paulo', 'SP'),
+('14070000', 'Rua do Sol', 'Jardim Paulista', 'São Paulo', 'SP'),
+('15080000', 'Rua dos Três Irmãos', 'Vila Progredior', 'São Paulo', 'SP'),
+('16090000', 'Rua das Acácias', 'Vila Progredior', 'São Paulo', 'SP'),
+('17012000', 'Rua Nove de Julho', 'Vila Aymoré', 'São Paulo', 'SP'),
+('18022000', 'Rua Carlos de Campos', 'Vila Progredior', 'São Paulo', 'SP'),
+('19033000', 'Rua Dona Anita Costa', 'Jardim Lapa', 'São Paulo', 'SP'),
+('20044000', 'Rua da Cantareira', 'Vila Cantareira', 'São Paulo', 'SP'),
+('21055000', 'Rua Da Paz', 'Vila Gomes Cardim', 'São Paulo', 'SP'),
+('22066000', 'Rua das Mangueiras', 'Vila Progredior', 'São Paulo', 'SP'),
+('23077000', 'Avenida Paulista', 'Bela Vista', 'São Paulo', 'SP'),
+('24088000', 'Rua do Catete', 'Catete', 'Rio de Janeiro', 'RJ'),
+('25099000', 'Rua Marquês de São Vicente', 'Gamboa', 'Rio de Janeiro', 'RJ'),
+('26010000', 'Rua do Lavradio', 'Saúde', 'Rio de Janeiro', 'RJ'),
+('27021000', 'Avenida Atlântica', 'Copacabana', 'Rio de Janeiro', 'RJ'),
+('28031000', 'Rua Uruguaiana', 'Centro', 'Rio de Janeiro', 'RJ'),
+('29042000', 'Rua Santa Clara', 'Copacabana', 'Rio de Janeiro', 'RJ'),
+('30053000', 'Rua do Ouvidor', 'Centro', 'Rio de Janeiro', 'RJ'),
+('31064000', 'Rua da Glória', 'Glória', 'Rio de Janeiro', 'RJ'),
+('32075000', 'Rua XV de Novembro', 'Centro', 'Curitiba', 'PR'),
+('33086000', 'Rua das Flores', 'Centro', 'Curitiba', 'PR'),
+('34097000', 'Rua Almirante Tamandaré', 'Batel', 'Curitiba', 'PR'),
+('35008000', 'Avenida Sete de Setembro', 'Centro', 'Curitiba', 'PR'),
+('36019000', 'Rua João Negrão', 'Santa Felicidade', 'Curitiba', 'PR'),
+('37040000', 'Rua dos Três Corações', 'Centro', 'Belo Horizonte', 'MG'),
+('38051000', 'Avenida Amazonas', 'Centro', 'Belo Horizonte', 'MG'),
+('39062000', 'Rua do Mercado', 'Centro', 'Belo Horizonte', 'MG'),
+('40073000', 'Rua da Bahia', 'Funcionários', 'Belo Horizonte', 'MG'),
+('41084000', 'Rua Paraná', 'Bairro de Fátima', 'Fortaleza', 'CE'),
+('42095000', 'Rua Coronel Feijó', 'Centro', 'Fortaleza', 'CE'),
+('43006000', 'Avenida Beira Mar', 'Meireles', 'Fortaleza', 'CE'),
+('44017000', 'Rua 24 de Maio', 'Centro', 'Salvador', 'BA'),
+('45028000', 'Avenida Sete de Setembro', 'Barra', 'Salvador', 'BA'),
+('46039000', 'Rua das Pedras', 'Pelourinho', 'Salvador', 'BA'),
+('47050000', 'Avenida Paulista', 'Jardins', 'São Paulo', 'SP');
+ 
+select * from ceps;
