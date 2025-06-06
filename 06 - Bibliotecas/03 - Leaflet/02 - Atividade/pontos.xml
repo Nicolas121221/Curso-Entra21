@@ -1,0 +1,57 @@
+<pontos>
+    <ponto>
+      <nome>Cooper Vila Nova</nome>
+      <lat>-26.904292960391114</lat>
+      <lng>-49.09318867807836</lng>
+      <categoria>mercado</categoria>
+    </ponto>
+    <ponto>
+      <nome>Supermercado Angeloni</nome>
+      <lat>-26.91263232766665</lat>
+      <lng>-49.080905730147556</lng>
+      <categoria>mercado</categoria>
+    </ponto>
+    <ponto>
+      <nome>Fort Atacadista</nome>
+      <lat>-26.892917849705224</lat>
+      <lng>-49.07119459526279</lng>
+      <categoria>mercado</categoria>
+    </ponto>
+    <ponto>
+      <nome>Don Peppone</nome>
+      <lat>-26.914962047316372</lat>
+      <lng>-49.07394914801255</lng>
+      <categoria>restaurante</categoria>
+    </ponto>
+    <ponto>
+      <nome>mailde bistrô</nome>
+      <lat>-26.920539333669673</lat>
+      <lng>-49.06581887363835</lng>
+      <categoria>restaurante</categoria>
+    </ponto>
+    <ponto>
+      <nome>Ibis Bucket</nome>
+      <lat>-26.91506732956839</lat>
+      <lng>-49.07154807193624</lng>
+      <categoria>restaurante</categoria>
+    </ponto>
+    <ponto>
+      <nome>Posto Ipiranga</nome>
+      <lat>-26.914550541251433</lat>
+      <lng>-49.074595061655934</lng>
+      <categoria>posto</categoria>
+    </ponto>
+    <ponto>
+      <nome>Posto Ipiranga</nome>
+      <lat>-26.914550541251433</lat>
+      <lng>-49.074595061655934</lng>
+      <categoria>posto</categoria>
+    </ponto>
+    <ponto>
+      <nome>Posto Márcio</nome>
+      <lat>-26.909773264457883</lat>
+      <lng>-49.0729578881666</lng>
+      <categoria>posto</categoria>
+    </ponto>
+  </pontos>
+  

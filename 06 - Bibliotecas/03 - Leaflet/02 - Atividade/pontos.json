@@ -1,0 +1,56 @@
+[
+  {
+    "nome": "Cooper Vila Nova",
+    "lat": -26.904292960391114,
+    "lng": -49.09318867807836,
+    "categoria": "mercado"
+  },
+  {
+    "nome": "Supermercado Angeloni",
+    "lat": -26.91263232766665,
+    "lng": -49.080905730147556,
+    "categoria": "mercado"
+  },
+  {
+    "nome": "Fort Atacadista",
+    "lat": -26.892917849705224,
+    "lng":  -49.07119459526279,
+    "categoria": "mercado"
+  },
+  {
+    "nome": "Don Peppone",
+    "lat":-26.914962047316372,
+    "lng": -49.07394914801255,
+    "categoria": "restaurante"
+  },
+  {
+    "nome":"mailde bistrô",
+    "lat": -26.920539333669673, 
+    "lng":-49.06581887363835,
+    "categoria":"restaurante"
+  },
+  {
+    "nome":"Ibis Bucket",
+    "lat": -26.91506732956839, 
+    "lng":-49.07154807193624, 
+    "categoria":"restaurante"
+  },
+  {
+    "nome":"Posto Ipiranga",
+    "lat":-26.914550541251433, 
+    "lng":-49.074595061655934,
+    "categoria":"posto"
+  },
+  {
+    "nome":"Posto Ipiranga",
+    "lat":-26.914550541251433, 
+    "lng":-49.074595061655934,
+    "categoria":"posto"
+  },
+  {
+    "nome":"Posto Márcio",
+    "lat":-26.909773264457883, 
+    "lng":-49.0729578881666,
+    "categoria":"posto" 
+  }
+]
