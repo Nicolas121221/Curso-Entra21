@@ -24,7 +24,7 @@
     "categoria": "restaurante"
   },
   {
-    "nome":"mailde bistrô",
+    "nome":"Mailde Bistrô",
     "lat": -26.920539333669673, 
     "lng":-49.06581887363835,
     "categoria":"restaurante"
@@ -42,9 +42,9 @@
     "categoria":"posto"
   },
   {
-    "nome":"Posto Ipiranga",
-    "lat":-26.914550541251433, 
-    "lng":-49.074595061655934,
+    "nome":"Posto Petrobras",
+    "lat":-26.901364031735106,
+    "lng": -49.08943233884492,
     "categoria":"posto"
   },
   {
