@@ -1,0 +1,50 @@
+[
+  {
+    "nome": "Terminal Aterro",
+    "lat": -26.87058531053053, 
+    "lng": -49.09517626719813,
+    "categoria": "marcador"
+  },
+  {
+    "nome": "Terminal Fonte",
+    "lat": -26.927907653286, 
+    "lng": -49.05756548465085,
+    "categoria": "marcador"
+  },
+  {
+    "nome": "Terminal Garcia",
+    "lat": -26.962098020068137, 
+    "lng": -49.06561944056958,
+    "categoria": "marcador"
+  },
+  {
+    "nome": "Terminal Velha",
+    "lat": -26.934349761909235, 
+    "lng": -49.13003503899656,
+    "categoria": "marcador"
+  },
+  {
+    "nome": "Terminal Fortaleza",
+    "lat": -26.88026593722478, 
+    "lng": -49.06794266290885,
+    "categoria": "marcador"
+  },
+  {
+    "nome": "Terminal Proeb",
+    "lat": -26.911695032436242, 
+    "lng": -49.080746295217345,
+    "categoria": "marcador"
+  },
+  {
+    "nome": "Terminal Itoupava",
+    "lat":-26.797653834358915, 
+    "lng":-49.084669831598475,
+    "categoria": "marcador"
+  },
+  {
+    "nome": "Terminal Água Verde",
+    "lat": -26.906049156595227, 
+    "lng": -49.13226853038532,
+    "categoria": "marcador"
+  }
+]

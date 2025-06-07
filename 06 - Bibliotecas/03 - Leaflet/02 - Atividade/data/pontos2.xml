@@ -1,0 +1,50 @@
+<pontos>
+  <ponto>
+    <nome>Terminal Aterro</nome>
+    <lat>-26.87058531053053</lat>
+    <lng>-49.09517626719813</lng>
+    <categoria>marcador</categoria>
+  </ponto>
+  <ponto>
+    <nome>Terminal Fonte</nome>
+    <lat>-26.927907653286</lat>
+    <lng>-49.05756548465085</lng>
+    <categoria>marcador</categoria>
+  </ponto>
+  <ponto>
+    <nome>Terminal Garcia</nome>
+    <lat>-26.962098020068137</lat>
+    <lng>-49.06561944056958</lng>
+    <categoria>marcador</categoria>
+  </ponto>
+  <ponto>
+    <nome>Terminal Velha</nome>
+    <lat>-26.934349761909235</lat>
+    <lng>-49.13003503899656</lng>
+    <categoria>marcador</categoria>
+  </ponto>
+  <ponto>
+    <nome>Terminal Fortaleza</nome>
+    <lat>-26.88026593722478</lat>
+    <lng>-49.06794266290885</lng>
+    <categoria>marcador</categoria>
+  </ponto>
+  <ponto>
+    <nome>Terminal Proeb</nome>
+    <lat>-26.911695032436242</lat>
+    <lng>-49.080746295217345</lng>
+    <categoria>marcador</categoria>
+  </ponto>
+  <ponto>
+    <nome>Terminal Itoupava</nome>
+    <lat>-26.797653834358915</lat>
+    <lng>-49.084669831598475</lng>
+    <categoria>marcador</categoria>
+  </ponto>
+  <ponto>
+    <nome>Terminal Água Verde</nome>
+    <lat>-26.906049156595227</lat>
+    <lng>-49.13226853038532</lng>
+    <categoria>marcador</categoria>
+  </ponto>
+</pontos>

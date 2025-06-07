@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pontos>
+    <ponto>
+        <nome>Ponto 1</nome>
+        <categoria></categoria>
+        <lat>-23.550520</lat>
+        <lng>-46.633308</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 2</nome>
+        <categoria></categoria>
+        <lat>-22.906847</lat>
+        <lng>-43.172896</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 3</nome>
+        <categoria></categoria>
+        <lat>-15.794229</lat>
+        <lng>-47.882166</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 4</nome>
+        <categoria></categoria>
+        <lat>-19.916681</lat>
+        <lng>-43.934493</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 5</nome>
+        <categoria></categoria>
+        <lat>-12.971389</lat>
+        <lng>-38.501389</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 6</nome>
+        <categoria></categoria>
+        <lat>-8.047562</lat>
+        <lng>-34.877001</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 7</nome>
+        <categoria></categoria>
+        <lat>-3.731862</lat>
+        <lng>-38.526670</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 8</nome>
+        <categoria></categoria>
+        <lat>-30.034647</lat>
+        <lng>-51.217658</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 9</nome>
+        <categoria></categoria>
+        <lat>-16.686882</lat>
+        <lng>-49.264788</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 10</nome>
+        <categoria></categoria>
+        <lat>-10.947247</lat>
+        <lng>-37.073084</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 11</nome>
+        <categoria></categoria>
+        <lat>-22.321234</lat>
+        <lng>-42.521321</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 12</nome>
+        <categoria></categoria>
+        <lat>-21.785454</lat>
+        <lng>-43.345221</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 13</nome>
+        <categoria></categoria>
+        <lat>-25.441105</lat>
+        <lng>-49.276855</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 14</nome>
+        <categoria></categoria>
+        <lat>-29.688541</lat>
+        <lng>-53.806921</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 15</nome>
+        <categoria></categoria>
+        <lat>-27.593500</lat>
+        <lng>-48.558540</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 16</nome>
+        <categoria></categoria>
+        <lat>-9.974730</lat>
+        <lng>-67.824897</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 17</nome>
+        <categoria></categoria>
+        <lat>-3.101944</lat>
+        <lng>-60.025000</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 18</nome>
+        <categoria></categoria>
+        <lat>-20.315500</lat>
+        <lng>-40.312800</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 19</nome>
+        <categoria></categoria>
+        <lat>-22.818399</lat>
+        <lng>-47.065876</lng>
+    </ponto>
+    <ponto>
+        <nome>Ponto 20</nome>
+        <categoria></categoria>
+        <lat>-24.007491</lat>
+        <lng>-46.402877</lng>
+    </ponto>
+</pontos>

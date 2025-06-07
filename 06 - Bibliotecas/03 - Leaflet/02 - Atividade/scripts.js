@@ -1,4 +1,4 @@
-fetch('pontos.json')
+fetch('./data/pontos.json')
     .then((response) => {
         if (!response.ok) {
             throw new Error("Erro ao carregar Pontos");
@@ -42,8 +42,6 @@ function load(pontos) {
 
     pontos.forEach((ponto) => {
         if (!ponto.categoria) ponto.categoria = "marcador"
-
-        console.log(ponto.categoria)
 
         let marker = L.marker([ponto.lat, ponto.lng], {
             icon: icons[String(ponto.categoria)],
@@ -101,11 +99,33 @@ document.querySelector('form').addEventListener('submit', (e) => {
                 console.log(e, "Erro ao processar JSON.")
             }
         } else if (file.name.endsWith(".xml")) {
-            applyXml(content);
+            let jsonArray = []
+            const parser = new DOMParser()
+            const xmlDoc = parser.parseFromString(content,"text/xml")
+
+            const pontos = xmlDoc.getElementsByTagName("ponto")
+
+            let nome = xmlDoc.getElementsByTagName('nome')
+            let lat = xmlDoc.getElementsByTagName('lat')
+            let lng = xmlDoc.getElementsByTagName('lng')
+            let categoria = xmlDoc.getElementsByTagName('categoria')
+
+            for(let i=0; i<pontos.length; i++){
+                let json = {}
+
+                json.nome = nome[i].textContent
+                json.lat = lat[i].textContent
+                json.lng = lng[i].textContent
+                json.categoria = categoria[i].textContent
+
+                jsonArray.push(json)
+            }
+
+            load(jsonArray)
         } else {
             alert("Arquivo inválido. Use apenas .json ou .xml");
-        }
-    }
+        };
+    };
 
     reader.readAsText(file)
 })
