@@ -9,8 +9,7 @@ O conteúdo desse repósitório é referente as aulas do entra 21 que ocorreram 
 A organização do repositório segue a estrutura do curso:
 
 ```text
-📦 Curso-JavascriptTypescript
- ┣ 📂 00 - Extras
+📦 Curso-Entra21
  ┣ 📂 01 - Introdução
  ┣ 📂 02 - Integração com banco de dados
  ┣ 📂 03 - Html e CSS
